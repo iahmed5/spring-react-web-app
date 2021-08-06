@@ -4,8 +4,15 @@ import Contact from './components/Contact'
 
 function App() {
   return (
-    <div className="App">
-      <Contact/>
+    <div className="container-fluid">
+      <nav>
+        <div className="nav-wrapper center-align">
+          <a href="/" className="brand-logo">Contacts</a>
+        </div>
+      </nav>
+      <div className="row">
+        <Contact/>
+      </div>
     </div>
   );
 }
