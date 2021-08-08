@@ -6,9 +6,9 @@ export default class AddContact extends Component {
         super(props);
 
         this.state = {
-            firstName: '',
-            lastName: '',
-            email: ''
+            firstName: null,
+            lastName: null,
+            email: null
         }
     }
 
@@ -42,9 +42,9 @@ export default class AddContact extends Component {
                     alert("Oops! ");
                 }
             }, function (e) {
-                alert("Error submitting form!");
+                alert("Error submitting form!" + e);
             });
-        window.location.reload();
+            window.location.reload();
     }
 
     render() {
