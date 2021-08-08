@@ -25,6 +25,7 @@ public class ContactController {
     @PostMapping
     private ResponseEntity<Contact> addContact(@RequestBody Contact contact) {
         Contact addedContact = repository.save(contact);
+        System.out.println(addedContact.toString());
         return ResponseEntity.ok().body(addedContact);
     }
 }
