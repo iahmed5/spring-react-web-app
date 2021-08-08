@@ -14,5 +14,6 @@ public class ContactData implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         repository.save(new Contact("Sajid", "Kareem", "sajid.k@gmail.com"));
+        repository.save(new Contact("Amen", "Fatima", "a.fatima@hotmail.com"));
     }
 }

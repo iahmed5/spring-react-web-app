@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Contact from './components/Contact'
 
-function App() {
+export default function App() {
   return (
     <div className="container-fluid">
       <nav>
@@ -16,5 +16,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
